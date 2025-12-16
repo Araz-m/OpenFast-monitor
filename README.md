@@ -1,31 +1,70 @@
 # OpenFAST-Output-Monitor
 
-# Real-time & Post-Processing Visualization Tool
+A Python-based tool for real-time and post-processing visualization of OpenFAST
+wind turbine simulation outputs.
 
-A Python tool for live monitoring and analysis of OpenFAST wind turbine simulations. Automatically plots parameters from `.out` files during execution (real-time) or after completion, eliminating manual Excel charting and handling thousands of data points seamlessly.
+This script supports academic and engineering workflows by enabling quick visual
+inspection of OpenFAST `.out` files during simulation execution or after
+completion.
 
-**Visualize key metrics like:** Wind speed, blade pitch angles, rotor speed, tower loads, power output, and structural responses - all in customizable, auto-updating plots.
-
-## 📌 Features
-- ✅ **Real-time data plotting** with Matplotlib animations.  
-- ✅ **Automatic file monitoring** – waits for the simulation output file to be available.  
-- ✅ **Multiple plot groups** – easily configurable for different sets of parameters.  
-- ✅ **Dynamic axis scaling** for improved readability.  
-- ✅ **Interactive plots** that automatically update as new data is written to the file.
 ---
 
-## 🚀 Installation & Setup
-### 1️⃣ Install Dependencies
-Make sure you have **Python 3.10+** installed. Then, install the required libraries:
+## Overview
+
+OpenFAST simulations, especially Design Load Case (DLC) studies, often run for
+many hours and generate large output files. This tool allows users to monitor
+key simulation variables in real time or analyze results after completion,
+without manual post-processing in spreadsheet software.
+
+The script reads OpenFAST output files, groups user-defined signals, and produces
+interactive plots that automatically update as new data becomes available.
+
+---
+
+## Key Capabilities
+
+- Real-time monitoring of OpenFAST `.out` files during simulation runs
+- Post-processing visualization of completed simulations
+- Automatic detection of output file creation and updates
+- Configurable plot groups for different physical quantities
+- Dynamic y-axis scaling for improved readability
+- Interactive Matplotlib figures suitable for long-running simulations
+
+---
+
+## Typical Use Cases
+
+- Monitoring long-running DLC simulations without manual intervention
+- Quickly validating simulation behavior during execution
+- Visual inspection of operational parameters, loads, and structural responses
+- Reducing reliance on manual Excel-based plotting for large datasets
+
+---
+
+## Installation
+
+### Requirements
+
+- Python 3.10 or newer
+
+### Dependencies
+
+Install the required Python packages:
 
 ```bash
 pip install pandas matplotlib numpy
-```
 
 ---
 ## ⚙️ Usage
-### Configuring Plots
-You can define different plot groups in the script by modifying:
+### 1. Configure Input File and Time Settings
+
+In the script, define:
+
+- The path to the OpenFAST .out file
+
+- Simulation time range
+
+- Simulation time step (must match the OpenFAST configuration)
 
 ```bash
 plot_groups_1 = {
