@@ -53,7 +53,7 @@ Install the required Python packages:
 
 ```bash
 pip install pandas matplotlib numpy
-
+```
 ---
 ## ⚙️ Usage
 ### 1. Configure Input File and Time Settings
