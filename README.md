@@ -91,20 +91,35 @@ plot_groups_1 = {
 }
 ```
 
+Column names must exactly match those in the OpenFAST .out file. Scaling factors
+allow normalization or unit adjustment for clearer visualization.
 
-you have to add the exact column name from your .out file and also you have to choose the scale that you need for the respected data in the list.
+Additional plot groups can be enabled in the script as needed.
 
-## When you have decided to run the real time simulation make sure that 
+### 3. Run the Script
+
+To enable real-time monitoring while the simulation is running:
+ 
 ```bash
 real_time=True
 ```
-Run the OpenFAST-Output-Monitor Script (I used VSCode Terminal)
+For post-processing of completed simulations:
 
-## 📸 Sample Output
-### 1 Set Example: 
+```bash
+real_time = False
+```
+The script can be executed from any Python environment (e.g. VS Code terminal).
+
+## 📸 Example Outputs
+
+### Single Plot Group Example 
+
 https://github.com/Araz-m/OpenFAST-Output-Monitor/blob/main/Figure_1_Example.png
-### Multiple Set Handling:
+
+### Multiple Plot Group Example
+
 https://github.com/Araz-m/OpenFAST-Output-Monitor/blob/main/3%20sets%20of%20figures_Example.png
+
 
 ## License
 
