@@ -75,3 +75,7 @@ https://github.com/Araz-m/OpenFast_Output_Viewer/blob/main/Figure_1_Example.png
 ### Multiple Set Handling:
 https://github.com/Araz-m/OpenFast_Output_Viewer/blob/main/3%20sets%20of%20figures_Example.png
 
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
