@@ -1,5 +1,16 @@
 # Developed by Araz Hamayeli Mehrabani, Flensburg University of Applied Sciences, 1st February 2025
 
+"""
+OpenFAST Output Monitor
+
+This script provides real-time and post-processing visualization
+of OpenFAST `.out` files using Matplotlib.
+
+Developed for academic and engineering workflows where quick
+inspection of simulation outputs is required.
+"""
+
+
 import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
@@ -211,3 +222,4 @@ if __name__ == "__main__":
 
     # add , plot_groups_3 if you need to plot more groups
     # add , plot_groups_2 if you need to plot more groups
+
