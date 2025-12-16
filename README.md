@@ -71,6 +71,16 @@ file_path = "path/to/your/OpenFAST.out"
 simulation_time_range = (start_time, end_time)
 simulation_time_step = dt
 ```
+### 2. Configure Plot Groups
+
+Users define which output channels to visualize by creating plot groups. Each
+group consists of:
+
+- A list of OpenFAST output column names
+
+- A corresponding list of scaling factors
+
+Example:
 
 ```bash
 plot_groups_1 = {
@@ -79,30 +89,6 @@ plot_groups_1 = {
     "Tip Clearance": (["Tip2Twr1", "Tip2Twr2", "Tip2Twr3"], 
                 [0.001, 0.001, 0.001, 0.001])
 }
-#==============================================================================
-#uncomment plot_groups_2 if you need to plot more groups 
-# if you did, remember to add <plot_groups_2> in the plot_multiple_groups function at the end
-#==============================================================================
-# plot_groups_2 = {
-#     "Loads on blade Root_I": (["RootFxb1", "RootFyb1", "RootFzb1", "RootMEdg1", "RootMFlp1", "RootMzb1"], 
-#                 [0.001, 0.001, 0.001, 0.001, 0.001, 0.001]),
-#     "Loads on blade Root_II": (["RootFxc1", "RootFyc1", "RootFzc1", "RootMzc1", "RootMzc2", "RootMzc3"], 
-#                 [0.001, 0.001, 0.001, 0.001, 0.001, 0.001])
-# }
-
-
-
-#==============================================================================
-#uncomment plot_groups_3 if you need to plot more groups
-# if you did, remember to add  <plot_groups_3> in the plot_multiple_groups function at the end
-#==============================================================================
-# plot_groups_3 = {
-#     "Loads on Tower Top_I": (["YawBrFxp", "YawBrFyp", "YawBrFzp"], 
-#                 [0.001, 0.001, 0.001]),
-#     "Loads on Tower Top_II": (["YawBrMxp", "YawBrMyp", "YawBrMzp"], 
-#                 [0.001, 0.001, 0.001])
-# }
-#==============================================================================
 ```
 
 
