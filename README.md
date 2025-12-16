@@ -120,6 +120,27 @@ https://github.com/Araz-m/OpenFAST-Output-Monitor/blob/main/Figure_1_Example.png
 
 https://github.com/Araz-m/OpenFAST-Output-Monitor/blob/main/3%20sets%20of%20figures_Example.png
 
+## Limitations
+
+- Supports a single OpenFAST output file at a time
+
+- Assumes a fixed simulation time step
+
+- Implemented as a standalone script rather than a packaged library
+
+- File paths and parameters are currently defined directly in the script
+
+## Related Tools
+
+This tool is part of a small set of OpenFAST automation utilities:
+
+- OpenFAST-DLC-sampler-Automator
+  Automates generation and execution of individual DLC simulations
+  https://github.com/Araz-m/OpenFAST-DLC-sampler-Automator
+
+- OpenFAST-DLC-campaign-Automator
+  Sequentially runs multiple DLC simulations as a complete campaign
+  https://github.com/Araz-m/OpenFAST-DLC-campaign-Automator
 
 ## License
 
