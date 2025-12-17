@@ -154,4 +154,12 @@ This tool is part of a small set of OpenFAST automation utilities:
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
+---
+
+## Author
+
+Developed by **Araz Hamayeli Mehrabani**  
+Flensburg University of Applied Sciences
+
+
 
